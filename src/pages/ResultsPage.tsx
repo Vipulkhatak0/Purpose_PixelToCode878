@@ -34,7 +34,7 @@ const ResultsPage = () => {
     setGeneratedCode(mockGeneratedCode);
   }, [imageData, fileName, navigate]);
 
-  const generateMockCode = (fileName: string) => {
+  const generateMockCode = (_fileName: string) => {
     // This generates realistic-looking React + Tailwind code
     // In production, this would be replaced with actual AI-generated code
     return `import React from 'react'
@@ -48,7 +48,7 @@ const GeneratedComponent = () => {
           Welcome to Our Platform
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Experience the next generation of digital solutions designed 
+          Experience the next generation of digital solutions designed
           specifically for modern businesses and creative professionals.
         </p>
       </header>
